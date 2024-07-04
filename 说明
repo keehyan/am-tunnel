@@ -1,0 +1,86 @@
+一、本期内容vless节点支持v2rayN、clash-verge-rev、ClashX、sing-box、Quantumult X等订阅
+
+两种部署方式
+1、回顾work部署
+
+2、回顾page部署
+
+UUID生成网址
+https://1024tools.com/uuid
+
+3、域名获取和绑定到cf
+注册域名
+https://dynv6.com/
+
+
+4、cf节点ip和官网ip获取
+cf端口
+HTTP：80，8080，8880，2052，2082，2086，2095
+HTTPS：443，2053，2083，2087，2096，8443
+
+生成临时邮箱
+https://tempmail.plus/zh/
+
+第三方ip
+https://fofa.info/
+
+server=="cloudflare" && port=="443" && country=="JP" && city=="Tokyo" 
+
+
+官网ip
+https://www.cloudflare-cn.com/ips/
+
+
+5、cf的反代ip获取
+server!="cloudflare" && port=="443" && country=="JP" && city=="Tokyo"
+
+
+6、如何优选节点ip和反代ip
+https://github.com/XIU2/CloudflareSpe...
+
+./CloudflareST -f ip.txt -tp 443
+一、本期内容vless节点支持v2rayN、clash-verge-rev、ClashX、sing-box、Quantumult X等订阅锁定ip和区域解锁chatgpt、netflix等
+
+https://cloudflare.com/
+https://github.com/ansoncloud8/am-tunnel
+
+1、page部署
+
+2、域名获取和绑定到cf的page部署应用
+https://dynv6.com/
+
+
+3、cf节点ip和官网ip获取
+cf端口
+HTTP(80系端口)：80，8080，8880，2052，2082，2086，2095
+HTTPS(443系端口)：443，2053，2083，2087，2096，8443
+
+🇸🇬SG：新加坡 🇭🇰 HK：香港 🇰🇷 KR：韩国 🇯🇵 JP：日本 🇬🇧 GB：英国 🇺🇸 US：美国 
+
+自定义名称.workers.dev  80系端口          落地ip根据客户端所填优选ip决定
+自定义名称.pages.dev    443系端口         IP变动频繁
+workers自定义域名       80和443系端口     前置另外的代码可固定IP与变更地区(poxyIP)
+pages自定义域名         443系端口         访问CF类网站poxyIP必须有效(落地ip)
+
+4、固定区域IP
+通过PROXYIP和优选ip地区绑定
+
+生成临时邮箱
+https://tempmail.plus/zh/
+
+第三方ip
+https://fofa.info/
+server=="cloudflare" && port=="443" && country=="JP" && city=="Tokyo" 
+
+官网ip
+https://www.cloudflare-cn.com/ips/
+
+
+cf的反代ip获取
+server!="cloudflare" && port=="443" && country=="JP" && city=="Tokyo"
+
+
+5、如何优选节点ip和反代ip
+https://github.com/XIU2/CloudflareSpe...
+
+./CloudflareST -f ip.txt -tp 443
